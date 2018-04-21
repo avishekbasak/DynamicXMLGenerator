@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c:customer xmlns="http://www.example1.org/customer" 
+xmlns:c="http://www.example1.org/customer"
+	xmlns:a="http://www.example1.org/address">
+	<c:name>Jane Doe</c:name>
+	<c:address>
+		<a:street>1 Any Street</a:street>
+		<a:city>Any Town</a:city>
+	</c:address>
+</c:customer>

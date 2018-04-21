@@ -1,0 +1,19 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:add="http://www.example1.org/address" 
+	xmlns="http://www.example1.org/customer"
+	targetNamespace="http://www.example1.org/customer"
+	elementFormDefault="qualified">
+
+	<xsd:import namespace="http://www.example1.org/address"
+		schemaLocation="src/main/java/com/test/dynamicjaxb/xsd/address.xsd" />
+
+	<xsd:element name="customer">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="name" type="xsd:string" minOccurs="0" />
+				<xsd:element name="address" type="add:address"
+					minOccurs="0" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,11 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://www.example1.org/address" 
+	targetNamespace="http://www.example1.org/address"
+	elementFormDefault="qualified">
+	<xsd:complexType name="address">
+		<xsd:sequence>
+			<xsd:element name="street" type="xsd:string" />
+			<xsd:element name="city" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>
